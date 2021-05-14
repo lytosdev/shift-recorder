@@ -1,0 +1,7 @@
+export const GET_SHIFTS = "GET_SHIFTS"
+export const ADD_SHIFT = "ADD_SHIFT"
+export const EDIT_SHIFT = "EDIT_SHIFT"
+export const REMOVE_SHIFT = "REMOVE_SHIFT"
+export const SHOW_MODAL = "SHOW_MODAL"
+export const SET_SHIFT_MODAL = "SET_SHIFT_MODAL"
+export const SET_COLOR = "SET_COLOR"
