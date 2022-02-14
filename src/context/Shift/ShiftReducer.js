@@ -1,7 +1,7 @@
-import { GET_SHIFTS, ADD_SHIFT, EDIT_SHIFT, REMOVE_SHIFT, SHOW_MODAL, SET_SHIFT_MODAL, SET_COLOR } from "./ShiftActions";
+import { GET_SHIFTS, ADD_SHIFT, EDIT_SHIFT, REMOVE_SHIFT, SET_COLOR } from "./ShiftActions"
 
-export default (state, action) => {
-    const { type, payload } = action;
+export default function ShiftReducer(state, action) {
+    const { type, payload } = action
 
     switch (type) {
         case GET_SHIFTS:
@@ -34,16 +34,6 @@ export default (state, action) => {
                 ...state,
                 shifts: newShifts
             }
-        case SHOW_MODAL:
-            return {
-                ...state,
-                visibleModal: payload,
-            }
-        case SET_SHIFT_MODAL:
-            return {
-                ...state,
-                shiftModal: payload
-            }
         case SET_COLOR:
             var newColors = []
             state.colors.forEach(e => {
@@ -57,7 +47,7 @@ export default (state, action) => {
                 colors: newColors
             }
         default:
-            return state;
+            return state
     }
 
 }

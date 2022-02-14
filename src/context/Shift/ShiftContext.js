@@ -1,5 +1,5 @@
 import { createContext } from "react"
 
-const ShiftContext = createContext();
+const ShiftContext = createContext()
 
-export default ShiftContext;
+export default ShiftContext
